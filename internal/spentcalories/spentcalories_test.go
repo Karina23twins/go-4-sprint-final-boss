@@ -440,7 +440,7 @@ func (suite *SpentCaloriesTestSuite) TestRunningSpentCalories() {
 	}
 }
 
-func (suite *SpentCaloriesTestSuite) TestWalkingSpentCalories() {
+func (suite *SpentCaloriesTestSuite) TestWalking() {
 	tests := []struct {
 		name     string
 		steps    int
@@ -553,7 +553,7 @@ func (suite *SpentCaloriesTestSuite) TestWalkingSpentCalories() {
 
 	for _, tt := range tests {
 		suite.Run(tt.name, func() {
-			gotCal, gotErr := WalkingSpentCalories(tt.steps, tt.weight, tt.height, tt.duration)
+			gotCal, gotErr := Walking(tt.steps, tt.weight, tt.height, tt.duration)
 
 			if tt.wantErr {
 				assert.Error(suite.T(), gotErr)
