@@ -21,6 +21,7 @@ const (
 func parsePackage(data string) (int, time.Duration, error) {
 	if data == "" {
 		log.Println("передана пустая строка")
+		return 0, 0, errors.New("передана пустая строка")
 	}
 
 	stepAndDuration := strings.Split(data, ",")
