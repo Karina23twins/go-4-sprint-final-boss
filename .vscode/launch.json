@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "/home/arina/go-4-sprint-final-boss/cmd/tracker",
+      "env": {},
+      "args": [],
+      "console": "integratedTerminal"
+    }
+  ]
+}
